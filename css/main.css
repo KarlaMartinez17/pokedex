@@ -20,11 +20,12 @@
  @media (max-width: 575.98px) { 
 
   #logo{
-    padding: 2em;
+    margin-bottom: 2em;
+    padding: 5em;
     width: 900px;
    
   }
-  
+
  }
 
 body {
@@ -46,20 +47,25 @@ body {
   }
   
   input {
-    border: 1px solid white;
+    border: 3px solid white;
     border-radius: 0.2em;
+   
   }
+
+ 
   
   #search-keyword {
-    width: 40%;
-    height: 4.5vh;
+    width: 60%;
+    height: 6vh;
+    font-size: 25px;
   }
   
   #send-btn {
-    width: 10%;
-    height: 5vh;
+    width: 15%;
+    height: 6vh;
     background-color: black;
     color: white;
+    font-size: 30px;
   }
   
   #back-info-container {
