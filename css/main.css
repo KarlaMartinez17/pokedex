@@ -1,8 +1,14 @@
-body {
+.bg{
     background-image: url(../assets/image/fondo.jpg);
     background-size: cover;
     height: 100vh;
-    background-repeat: no-repeat;
+    width: 100vw;
+    position: fixed;
+    
+  }
+
+  .principal-container{
+    position: relative;
     text-align: center;
   }
 

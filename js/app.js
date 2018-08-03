@@ -1,10 +1,43 @@
 $(document).ready(function () {
 
+    ajaxAllPokemon();
+
+    function ajaxAllPokemon(pokemonData) {
+        $.ajax({
+            url: 'https://pokeapi.co/api/v2/pokemon/',
+            type: 'GET',
+            datatype: 'json',
+        })
+            .done(function (response) {
+                var data = (response);
+                console.log(data);
+                showAllPokemon(data.results);
+            })
+            .fail(function () {
+                console.log("error");
+            })
+    }
+
+    function showAllPokemon(pokemonArray){
+        for(var i = 0; i < pokemonArray.length; i++ ){
+           var currentPokemon = pokemonArray[i];
+            ajaxPokemon(currentPokemon.name);
+        }
+    }
+
+
     $("#send-btn").click(function (event) {
         event.preventDefault();
         console.log("entro");
+        $("#container").empty();
         var pokemon = $("#search-keyword").val();
-        ajaxPokemon(pokemon);
+
+        if(pokemon) {
+            ajaxPokemon(pokemon);
+        } else {
+            ajaxAllPokemon();
+        }
+        
     });
 
 
@@ -36,7 +69,7 @@ $(document).ready(function () {
         var pokemonWeight = data.weight;
         console.log(pokemonWeight);
         var AbilitiesTemplate = pokemonAbilitiesTemplate(pokemonAbilities);
-        $("#container").empty();
+        
         $("#container").append(buildingTemplate(pokemonImg, pokemonName, AbilitiesTemplate, pokemonTypes, pokemonWeight));
 
     }
