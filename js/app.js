@@ -93,7 +93,7 @@ $(document).ready(function () {
             '<li>Name:' + pokemonName + '</li>' +
             '<li>Abilities:' + pokemonAbilities + '</li>' +
             '<li>Type:' + pokemonTypes + '</li>' +
-            '<li>Weight:' + pokemonWeight + '</li>' +
+            '<li>Weight:' + pokemonWeight + ' pounds </li>' +
             '</ul >';
         return template;
 

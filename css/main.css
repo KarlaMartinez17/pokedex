@@ -1,3 +1,8 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
 .bg{
     background-image: url(../assets/image/fondo.jpg);
     background-size: cover;
@@ -39,20 +44,61 @@
     font-size: 25px;
   }
   
-  #send-btn {
-    width: 15%;
+   /* #send-btn {
+     width: 15%;
     height: 6vh;
     background-color: black;
     color: white;
     font-size: 30px;
-    cursor: pointer;
+    cursor: pointer; 
+    position: relative; 
   }
 
-  #send-btn:hover{
+  #send-btn:hover {
     background-color: red;
-    color:white;
-  }
+    color:white; 
+  } 
+   */
   
+   #send-btn{
+    background:rgb(199, 3, 3);
+    color:#fff;
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+  }
+  #send-btn:hover{
+    background:#fff;
+    color:rgb(187, 12, 12);
+  }
+  #send-btn:before,#send-btn:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: rgb(171, 26, 26);
+    transition:400ms ease all;
+  }
+  #send-btn:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  #send-btn:hover:before,#send-btn:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+
+
+
   #back-info-container {
     border: 3px solid black;
     border-radius: 2em;
@@ -66,33 +112,45 @@
     list-style: none;
   }
 
-
-
   @media (max-width: 991.98px) { 
 
-    #logo{
-      padding: 2em;
-      width:  40%;
+
+  #logo{
+    width: 65%;
+    margin-top: 6em;
+  }
+
+    #send-btn{
+      background:rgb(199, 3, 3);
+      color:#fff;
+      border:none;
+      position:relative;
+      height:108px;
+      font-size:1.6em;
+      padding:0 2em;
+      cursor:pointer;
+      transition:800ms ease all;
+      outline:none;
+    }
+  
+    #search-keyword {
+      width: 60%;
+      margin-top: 3em;
+      height: 100px;
+      font-size: 25px;
     }
   
   }
   
-  @media (max-width: 767.98px) { 
+
+
+
+
   
-    #logo{
-      padding: 2em;
-      width: 50%;
-    }
-  
-   }
-  
-   @media (max-width: 575.98px) { 
-  
-    #logo{
-      margin-bottom: 2em;
-      padding: 5em;
-      width: 900px;
-     
-    }
-  
-   } 
+
+
+ 
+ 
+
+   
+ 
