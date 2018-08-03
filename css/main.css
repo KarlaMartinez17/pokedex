@@ -43,8 +43,8 @@ body {
   }
 
   #send-btn:hover{
-    background-color: white;
-    color: black;
+    background-color: red;
+    color:white;
   }
   
   #back-info-container {
