@@ -1,38 +1,13 @@
-@media (max-width: 991.98px) { 
-
-  #logo{
-    padding: 2em;
-    width:  70%;
-  }
-
-}
-
-@media (max-width: 767.98px) { 
-
-  #logo{
-    padding: 2em;
-    width: 50%;
-  }
-
- }
-
- @media (max-width: 575.98px) { 
-
-  #logo{
-    margin-bottom: 2em;
-    padding: 5em;
-    width: 900px;
-   
-  }
-
- }
-
 body {
     background-image: url(../assets/image/fondo.jpg);
     background-size: cover;
     height: 100vh;
     background-repeat: no-repeat;
     text-align: center;
+  }
+
+  #logo{
+    width: 40%;
   }
 
   h1 {
@@ -72,7 +47,6 @@ body {
     width: 500px;
     margin-left: 25%;
     padding-bottom: 4%;
-    display: none;
     background-color: beige;
   }
   
@@ -82,4 +56,31 @@ body {
 
 
 
+  @media (max-width: 991.98px) { 
+
+    #logo{
+      padding: 2em;
+      width:  40%;
+    }
   
+  }
+  
+  @media (max-width: 767.98px) { 
+  
+    #logo{
+      padding: 2em;
+      width: 50%;
+    }
+  
+   }
+  
+   @media (max-width: 575.98px) { 
+  
+    #logo{
+      margin-bottom: 2em;
+      padding: 5em;
+      width: 900px;
+     
+    }
+  
+   } 
