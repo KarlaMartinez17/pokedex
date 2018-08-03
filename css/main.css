@@ -39,6 +39,12 @@ body {
     background-color: black;
     color: white;
     font-size: 30px;
+    cursor: pointer;
+  }
+
+  #send-btn:hover{
+    background-color: white;
+    color: black;
   }
   
   #back-info-container {
